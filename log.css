@@ -1,0 +1,100 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #333399, #ff00cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-card{
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+.login-card::before{
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.26);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -3;
+}
+.login-card-logo{
+    margin-bottom: 2rem;
+}
+.login-card-logo img{
+    width:60px;
+}
+.login-card-logo,
+.login-card-hader,
+.login-card-footer{
+    text-align: center;
+}
+
+.login-card a{
+    text-decoration: none;
+    color:#35339a;
+}
+.login-card a:hover{
+    text-decoration: underline;
+}
+
+.login-card-hader{
+    margin-bottom: 2rem;
+}
+.login-card-hader h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+.login-card-hader h1 + div{
+    font-size:calc(1rem + o.2)
+}
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.login-card-form .form-item{
+    position: relative;
+}
+.login-card-form .form-item .material-symbols-outlined{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+.login-card-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-footer{
+    margin-top: 1.5rem;
+    font-size: 80%;
+}
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"]{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+}
